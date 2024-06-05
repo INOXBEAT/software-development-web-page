@@ -39,7 +39,7 @@ header::before {
 }
 
 .menu input[type="checkbox"] {
-    display: none;
+    display: initial;
 }
 
 
