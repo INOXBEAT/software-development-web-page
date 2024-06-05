@@ -18,6 +18,7 @@ body {
 }
 
 header {
+    position: relative;
     background-color: #021e2ab3;
     padding: 150px 0 100px 0;
     min-height: 70vh;
@@ -47,7 +48,7 @@ header::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 86%;
+    height: 100%;
     object-fit: cover;
     z-index: -2;
     opacity: 0.9;
@@ -67,6 +68,10 @@ header::before {
     background-color: #021e2ab3;
 }
 
+.menu input[type="checkbox"] {
+    display: none;
+}
+
 .menu .navbar {
     position: absolute;
     top: 0;
@@ -78,11 +83,19 @@ header::before {
     flex-direction: column;
     align-items: center;
     z-index: 999;
+    width: 100%;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
 }
 
 .menu .navbar ul li ul {
@@ -140,16 +153,18 @@ header::before {
     z-index: 1; 
     color: #fff;
     padding: 20px;    
+    align-items: center;
 }
 
 .header-txt {
     width: 50%;
     color: #fafafa;
+    margin-right: 25px;
 }
 
 .header-txt h1 {
     line-height: 1;
-    color: #50c0f0;
+    color: aqua;
     text-transform: uppercase;
     font-size: 75px;
     margin-bottom: 10px;
@@ -183,7 +198,11 @@ header::before {
 }
 
 .header-info {
-    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     margin: 0 auto;
     
 }
@@ -229,3 +248,18 @@ header::before {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.header-img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.fa-caret-down {
+    margin-left: 5px; 
+    color: #a8dff6; 
+}
