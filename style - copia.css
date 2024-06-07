@@ -403,22 +403,56 @@ main h1 {
 .info-2 h1 {
     color: #fafafa;
     font-size: 40px;
-    text-align: center;
+}
+
+.info-2 p {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .info-2 {
-    width: 100%;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(2, 30, 42, 0.8);
     border-radius: 20px;
-    flex: 1 1 calc(25% - 20px);
-    box-sizing: content-box;
-    padding: 20px;
-    background-color: #021e2adb;
-    text-align: justify;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fafafa;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 1100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     margin: 20px 20px;
+}
+
+.btn2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #50c0f0;
+    color: #021e2adb;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 800;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-size: 35px;
+    animation: bounce 1.5s infinite alternate-reverse;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.10);
+    }
+}
+
+.btn-2:hover {
+    background: #fafafa;
+    transform: translateY(-3px);
 }
