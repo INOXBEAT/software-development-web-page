@@ -36,8 +36,8 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: -1; 
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .menu input[type="checkbox"] {
@@ -80,7 +80,7 @@ header::before {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #021e2ab3; 
+    background-color: #021e2ab3;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -111,7 +111,7 @@ header::before {
     padding: 10px;
     border-radius: 5px;
     z-index: 2;
-    white-space: nowrap; 
+    white-space: nowrap;
     font-size: 20px;
 }
 
@@ -146,7 +146,7 @@ header::before {
     display: block;
 }
 
-.menu input[type="checkbox"]:checked ~ .navbar {
+.menu input[type="checkbox"]:checked~.navbar {
     display: block;
 }
 
@@ -154,9 +154,9 @@ header::before {
 .header-content {
     display: flex;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     color: #fff;
-    padding: 20px;    
+    padding: 20px;
     align-items: center;
 }
 
@@ -186,7 +186,7 @@ header::before {
 
 .btn-1 {
     display: inline-block;
-    padding:  10px 20px;
+    padding: 10px 20px;
     background-color: #50c0f0;
     color: #021e2adb;
     text-decoration: none;
@@ -196,14 +196,16 @@ header::before {
     text-transform: uppercase;
     font-size: 35px;
     animation: bounce 1.5s infinite alternate-reverse;
+    text-align: center;
 }
 
 @keyframes bounce {
     0% {
-        transform: scale(1); 
+        transform: scale(1);
     }
+
     100% {
-        transform: scale(1.10); 
+        transform: scale(1.10);
     }
 }
 
@@ -219,7 +221,7 @@ header::before {
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 .menu-container {
@@ -270,8 +272,8 @@ header::before {
 }
 
 .fa-caret-down {
-    margin-left: 5px; 
-    color: #a8dff6; 
+    margin-left: 5px;
+    color: #a8dff6;
 }
 
 .header-img img {
@@ -296,6 +298,12 @@ header::before {
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: justify;
 }
 
 .quienes-somos {
@@ -307,22 +315,6 @@ header::before {
     padding-bottom: 20px;
     width: 1100px;
     margin: 0 auto;
-}
-
-
-.info-1 {
-    flex: 1 1 calc(25% - 20px);
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    text-align: justify;
-}
-
-.info-1 img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
 }
 
 .quienes-somos h1 {
@@ -359,22 +351,39 @@ header::before {
     opacity: 0.8;
 }
 
-.header-content {
+.servicios-content {
     display: flex;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     color: #fff;
-    padding: 20px;    
+    padding: 20px;
     align-items: center;
 }
 
-.header-txt {
-    width: 50%;
-    color: #fafafa;
-    margin-right: 25px;
+.servicios {
+    position: relative;
 }
 
-.header-txt h1 {
+.servicios-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+main p {
+    font-size: 20px;
+    color: #fafafa;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 100%;
+}
+
+main h1 {
     line-height: 1;
     color: aqua;
     text-transform: uppercase;
@@ -382,12 +391,68 @@ header::before {
     margin-bottom: 10px;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
-.header-txt p {
-    font-size: 20px;
+.servicios-content {
+    padding: 20px;
+    z-index: 1;
+    align-items: center;
+}
+
+.info-2 h1 {
     color: #fafafa;
-    margin-bottom: 45px;
-    width: 100%;
-    height: 100%;
+    font-size: 40px;
+}
+
+.info-2 p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.info-2 {
+    background-color: rgba(2, 30, 42, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.btn2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #50c0f0;
+    color: #021e2adb;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 800;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-size: 35px;
+    animation: bounce 1.5s infinite alternate-reverse;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.10);
+    }
+}
+
+.btn-2:hover {
+    background: #fafafa;
+    transform: translateY(-3px);
 }
